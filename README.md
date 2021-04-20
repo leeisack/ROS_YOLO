@@ -1,5 +1,8 @@
-Guide to using the YOLO system in ROS (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.) H1
-===============================================================================================================
+Yolo_ROS
+===========
+
+Guide to using the YOLO system in ROS (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.)
+---------------------------
 Ros installation
 --------------------------------------
 What is ROS? 
@@ -18,6 +21,13 @@ $ git clone --recursive git@github.com:leggedrobotics/darknet_ros.git
 $ cd ../
 #### compile
 $ catkin_make -DCMAKE_BUILD_TYPE=Release
+#### YOLO version modification
+> find darknet_ros.launch file
+(Maybe here)
+$ cd catkin_ws/src/darknet_ros/darknet_ros/launch
+> opend darknet_ros.launch with gedit 
+$ gedit darknet_ros.launch
+<img src="/home/kitechai/사진/modify.png" width ="100%" title="customizing_YOLOver" alt="customizing_YOLOver"></img>
 
 
 #### As hardware, I use a zed2 camera and a jetson xavier. Therefore, if you are using different hardware, following these instructions may not produce the same results.
