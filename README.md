@@ -44,12 +44,17 @@ $ gedit darknet_ros.launch
 </code>
 </pre>
 ![modify](https://user-images.githubusercontent.com/52061393/115366004-de1b5e00-a1ff-11eb-9f87-fae479135f4b.png)
+
+> For example, if you want to change from yolov2.tiny version to yolov3
+change from
 <pre>
 <code>
-> For example, if you want to change from yolov2.tiny version to yolov3
-'change from'
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov2-tiny.yaml"/
-'to'
+</code>
+</pre>
+to
+<pre>
+<code>
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
 </code>
 </pre>
