@@ -1,7 +1,6 @@
 Yolo_ROS
 ===========
-
-Guide to using the YOLO system in ROS (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.)
+### Guide to using the YOLO system in ROS (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.)
 ---------------------------
 Ros installation
 --------------------------------------
@@ -30,7 +29,10 @@ $ cd ../
 $ catkin_make -DCMAKE_BUILD_TYPE=Release
 </code>
 </pre>
+
 #### YOLO version modification
+> The default version is yolov2tiny, but if you want, download other weights (Go to https://github.com/leoll2/darknet_ros_zed and follow the weight download guide)
+> and 
 > find darknet_ros.launch file
 <pre>
 <code>
@@ -43,12 +45,22 @@ $ gedit darknet_ros.launch
 ![modify](https://user-images.githubusercontent.com/52061393/115366004-de1b5e00-a1ff-11eb-9f87-fae479135f4b.png)
 <pre>
 <code>
+> For example, if you want to change from yolov2.tiny version to yolov3
 change from
-arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
+arg name="network_param_file"         default="$(find darknet_ros)/config/yolov2-tiny.yaml"/
 to
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
 </code>
 </pre>
+> yolov3 lauch
+<pre>
+<code>
+roslaunch darknet_ros darknet_ros.launch
+</code>
+</pre>
+> result
+![result](https://user-images.githubusercontent.com/52061393/115367393-21c29780-a201-11eb-96b1-a9ba339c380e.png)
+
 
 
 #### As hardware, I use a zed2 camera and a jetson xavier. Therefore, if you are using different hardware, following these instructions may not produce the same results.
