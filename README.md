@@ -6,7 +6,7 @@ Ros installation
 --------------------------------------
 What is ROS? 
 > ROS(Robot Operating System)is an open-source, meta-operating system for your robot. It provides the services you would expect from an operating system, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. Basically, it works in the Ubunto environment.
-Follow as directed here
+> If you want to install, go here and follow the instructions.
  http://wiki.ros.org/ROS/Installation
  
  
