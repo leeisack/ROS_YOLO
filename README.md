@@ -1,4 +1,3 @@
-![modify](https://user-images.githubusercontent.com/52061393/115366004-de1b5e00-a1ff-11eb-9f87-fae479135f4b.png)
 Yolo_ROS
 ===========
 
@@ -15,20 +14,41 @@ Follow as directed here
 Yolo istallation
 ---------------------------------------------
 (On the teminal)
+
 #### download
+<pre>
+<code>
 $ mkdir -p catkin_workspace/src
 $ cd catkin_workspace/src
 $ git clone --recursive git@github.com:leggedrobotics/darknet_ros.git
 $ cd ../
+</code>
+</pre>
 #### compile
+<pre>
+<code>
 $ catkin_make -DCMAKE_BUILD_TYPE=Release
+</code>
+</pre>
 #### YOLO version modification
 > find darknet_ros.launch file
-(Maybe here)
+<pre>
+<code>
+#(Maybe here)
 $ cd catkin_ws/src/darknet_ros/darknet_ros/launch
-> opend darknet_ros.launch with gedit 
+#opend darknet_ros.launch with gedit 
 $ gedit darknet_ros.launch
-<img src="/home/kitechai/사진/modify.png" width ="100%" title="customizing_YOLOver" alt="customizing_YOLOver"></img>
+</code>
+</pre>
+![modify](https://user-images.githubusercontent.com/52061393/115366004-de1b5e00-a1ff-11eb-9f87-fae479135f4b.png)
+<pre>
+<code>
+change from
+arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
+to
+arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
+</code>
+</pre>
 
 
 #### As hardware, I use a zed2 camera and a jetson xavier. Therefore, if you are using different hardware, following these instructions may not produce the same results.
