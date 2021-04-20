@@ -47,9 +47,9 @@ $ gedit darknet_ros.launch
 <pre>
 <code>
 > For example, if you want to change from yolov2.tiny version to yolov3
-change from
+'change from'
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov2-tiny.yaml"/
-to
+'to'
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
 </code>
 </pre>
@@ -63,6 +63,8 @@ result
 -----------------------------------------
 ![result](https://user-images.githubusercontent.com/52061393/115367393-21c29780-a201-11eb-96b1-a9ba339c380e.png)
 
+
+# It is not finished yet.
 
 
 #### As hardware, I use a zed2 camera and a jetson xavier. Therefore, if you are using different hardware, following these instructions may not produce the same results.
