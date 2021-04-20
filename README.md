@@ -17,8 +17,8 @@ Yolo istallation
 #### download
 <pre>
 <code>
-$ mkdir -p catkin_workspace/src
-$ cd catkin_workspace/src
+$ mkdir -p catkin_ws/src
+$ cd catkin_ws/src
 $ git clone --recursive git@github.com:leggedrobotics/darknet_ros.git
 $ cd ../
 </code>
