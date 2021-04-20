@@ -30,7 +30,8 @@ $ catkin_make -DCMAKE_BUILD_TYPE=Release
 </code>
 </pre>
 
-#### YOLO version modification
+YOLO version modification
+-------------------------------------------
 > The default version is yolov2tiny, but if you want, download other weights (Go to https://github.com/leoll2/darknet_ros_zed and follow the weight download guide)
 > and 
 > find darknet_ros.launch file
@@ -52,7 +53,7 @@ to
 arg name="network_param_file"         default="$(find darknet_ros)/config/yolov3.yaml"/
 </code>
 </pre>
-> yolov3 lauch
+> yolov3 launch
 <pre>
 <code>
 roslaunch darknet_ros darknet_ros.launch
