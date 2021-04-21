@@ -46,7 +46,9 @@ $ cd catkin_ws/src/darknet_ros/darknet_ros/launch
 #opend darknet_ros.launch with gedit 
 $ gedit darknet_ros.launch
 ```
-![modify](https://user-images.githubusercontent.com/52061393/115366004-de1b5e00-a1ff-11eb-9f87-fae479135f4b.png)
+
+> Modify the dragged part
+> ![스크린샷, 2021-04-21 11-35-47](https://user-images.githubusercontent.com/52061393/115488651-d7d7c100-a295-11eb-91c1-f41bdc7b6ca6.png)
 
 > For example, if you want to change from yolov2.tiny version to yolov3
 
@@ -133,7 +135,6 @@ Error occurrence situation
 > enable_console_output: true
 > ```
 > ### Change the code in yolov3.yaml like this(You can see the screenshot at the bottom)
-> ```
 > Add the dragged part.
 > ![스크린샷, 2021-04-21 11-31-45](https://user-images.githubusercontent.com/52061393/115488394-5c760f80-a295-11eb-88de-d7450c9c72e8.png)
 
