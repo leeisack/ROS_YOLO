@@ -68,12 +68,33 @@ $ roslaunch darknet_ros yolov3.launch
 #### (yolov2-tniy)
 ----------------------------------------------------------------
 
-YOLO version modification
+YOLO version change
 -------------------------------------------
+
 > The default version is yolov2tiny, but
 If you want to use a different version of the weights (go to https://github.com/leoll2/darknet_ros_zed and follow the weights download guide) and Find the darknet_ros.launch file among the files in catkin_ws.
+#### Download weights
 ```
-#(Maybe here)
+$ cd catkin_ws/src/darknet_ros/darknet_ros/yolo_network_config/weights
+```
+* COCO data set(Yolov2)
+```
+wget http://pjreddie.com/media/files/yolov2.weights
+wget http://pjreddie.com/media/files/yolov2-tiny.weights
+```
+* VOC data set(Yolov2)
+```
+wget http://pjreddie.com/media/files/yolov2-voc.weights
+wget http://pjreddie.com/media/files/yolov2-tiny-voc.weights
+```
+* Yolov3
+```
+wget http://pjreddie.com/media/files/yolov3-voc.weights
+wget http://pjreddie.com/media/files/yolov3.weights
+```
+#### setting
+```
+#Maybe here
 $ cd catkin_ws/src/darknet_ros/darknet_ros/launch
 #opend darknet_ros.launch with gedit 
 $ gedit darknet_ros.launch
