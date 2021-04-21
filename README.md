@@ -1,12 +1,14 @@
 Yolo_ROS
 ===========
-### Guide to using the YOLO system in ROS (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.)
+### Guide to using the YOLO system in ROS 
+#### (I felt that it did not work well even if I followed the articles posted on the Internet, and I recorded it mainly for solutions by situation.)
 ---------------------------
 Ros installation
 --------------------------------------
 What is ROS? 
 > ROS(Robot Operating System)is an open-source, meta-operating system for your robot. It provides the services you would expect from an operating system, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. Basically, it works in the Ubunto environment.
-> If you want to install, go here and follow the instructions.
+
+> > If you want to install, go here and follow the instructions.
  http://wiki.ros.org/ROS/Installation
  
  
@@ -32,9 +34,9 @@ $ catkin_make -DCMAKE_BUILD_TYPE=Release
 
 YOLO version modification
 -------------------------------------------
-> The default version is yolov2tiny, but if you want, download other weights (Go to https://github.com/leoll2/darknet_ros_zed and follow the weight download guide)
-> and 
-> find darknet_ros.launch file
+> The default version is yolov2tiny, but
+If you want to use a different version of the weights (go to https://github.com/leoll2/darknet_ros_zed and follow the weights download guide) and Find the darknet_ros.launch file among the files in catkin_ws.
+
 <pre>
 <code>
 #(Maybe here)
@@ -68,9 +70,12 @@ roslaunch darknet_ros darknet_ros.launch
 result
 -----------------------------------------
 ![result](https://user-images.githubusercontent.com/52061393/115367393-21c29780-a201-11eb-96b1-a9ba339c380e.png)
+-------------------------------
+
+Settings for each camera used
+============================
+
+Error occurrence situation
+===========================
 
 
-# It is not finished yet.
-
-
-#### As hardware, I use a zed2 camera and a jetson xavier. Therefore, if you are using different hardware, following these instructions may not produce the same results.
