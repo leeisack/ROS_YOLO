@@ -109,6 +109,7 @@ Settings for each camera used
 > The topic code of the desired function must be written in the ros.yaml file.
 > <br>
 >![스크린샷, 2021-04-21 11-21-07](https://user-images.githubusercontent.com/52061393/115490066-4d449100-a298-11eb-9279-dd1ea392856c.png)
+> <br>
 > ```
 > subscribers:
 > camera_reading:
@@ -150,11 +151,12 @@ Error occurrence situation
 > ```
 
 ## CASE2
-> ### When the Zed camera does not work
+> ### When the Zed camera doesn't work
 > ![스크린샷, 2021-04-21 13-42-20](https://user-images.githubusercontent.com/52061393/115497923-89332280-a2a7-11eb-871e-d9ff224e14f0.png)
 > #### build
 > ```
-> $ source ./devel/setup.bash #current position : catkin_ws
+> $ cd catkin_ws
+> $ source ./devel/setup.bash
 > ```
 > #### run
 > ```
@@ -202,7 +204,7 @@ Error occurrence situation
 
 RVIZ
 ===========
-> #### Additionally, using RVIZ can help you visually. RVIZ is a 3D visualization tool for ROS applications.
+> #### Additionally, it can be visually helpful if you use RVIZ. RVIZ is a 3D visualization tool for ROS applications.
 > install
 > The installation command differs depending on your ROS (in my case it was the melodic version).
 > ```
