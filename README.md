@@ -60,7 +60,10 @@ $ roslaunch darknet_ros darknet_ros.launch
 ```
 $ roslaunch darknet_ros yolov3.launch
 ```
-
+#### result
+![스크린샷, 2021-04-21 14-37-07](https://user-images.githubusercontent.com/52061393/115502208-7e7c8b80-a2af-11eb-91c8-1c55980b51b1.png)
+yolov2-tiy
+<br>
 YOLO version modification
 -------------------------------------------
 > The default version is yolov2tiny, but
@@ -73,6 +76,7 @@ $ gedit darknet_ros.launch
 ```
 > For example, if you want to change from yolov2.tiny version to yolov3
 > Modify the dragged part
+> #### result
 > ![스크린샷, 2021-04-21 11-35-47](https://user-images.githubusercontent.com/52061393/115488651-d7d7c100-a295-11eb-91c1-f41bdc7b6ca6.png)
 
 
