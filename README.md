@@ -65,7 +65,7 @@ $ roslaunch darknet_ros yolov3.launch
 #### result
 ![스크린샷, 2021-04-21 14-37-07](https://user-images.githubusercontent.com/52061393/115502208-7e7c8b80-a2af-11eb-91c8-1c55980b51b1.png)
 <br>
-#### (yolov2-tniy)
+####                                   (yolov2-tniy)
 <br>
 YOLO version modification
 -------------------------------------------
