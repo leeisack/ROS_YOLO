@@ -73,4 +73,23 @@ Settings for each camera used
 Error occurrence situation
 ===========================
 
+## CASE1
+> ### When Darknet doesn't work
+> #### build
+```
+$ cd catkin_ws
+$ catkin_make-DCMAKE_BUILD_TYPE=Release
+$ source devel/setup.bash
+```
+> #### run
+```
+$ roslaunch darknet_ros darknet_ros.launch
+```
 
+## CASE2
+> ### When the Zed camera does not work
+> #### build
+> ```
+> $ catkin_make -DCMAKE_BUILD_TYPE=Release
+> $ source ./devel/setup.bash #current position : catkin_ws
+> ```
