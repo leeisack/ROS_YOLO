@@ -117,8 +117,6 @@ Settings for each camera used
 > The topic code of the desired function must be written in the ros.yaml file.
 > <br>
 ![스크린샷, 2021-04-21 11-21-07](https://user-images.githubusercontent.com/52061393/115501283-dd410580-a2ad-11eb-9087-2571d6eba089.png)
-
-> <br>
 > ```
 > subscribers:
 > camera_reading:
