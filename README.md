@@ -254,6 +254,7 @@ RVIZ
 > $ roscore
 > ```
 > run
+> 
 > '''
 > $ rosrun rviz rviz
 > '''
