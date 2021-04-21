@@ -254,10 +254,11 @@ RVIZ
 > $ roscore
 > ```
 > run
-> 
-> '''
+> <pre>
+> <code>
 > $ rosrun rviz rviz
-> '''
+> </code>
+> </pre>
 > ![스크린샷, 2021-04-21 13-45-02](https://user-images.githubusercontent.com/52061393/115498058-ca2b3700-a2a7-11eb-94fb-e785dda9f632.png)
 > If yolo_ros, zed camera is on, press ADD in RVIZ to see various functions.
 > ![스크린샷, 2021-04-21 13-46-55](https://user-images.githubusercontent.com/52061393/115500616-9d2d5300-a2ac-11eb-80a9-5cfd8878ffae.png)
