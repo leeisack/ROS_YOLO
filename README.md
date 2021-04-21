@@ -46,11 +46,10 @@ $ cd catkin_ws/src/darknet_ros/darknet_ros/launch
 #opend darknet_ros.launch with gedit 
 $ gedit darknet_ros.launch
 ```
-
+> For example, if you want to change from yolov2.tiny version to yolov3
 > Modify the dragged part
 > ![스크린샷, 2021-04-21 11-35-47](https://user-images.githubusercontent.com/52061393/115488651-d7d7c100-a295-11eb-91c1-f41bdc7b6ca6.png)
 
-> For example, if you want to change from yolov2.tiny version to yolov3
 
 change from
 ```
@@ -78,9 +77,9 @@ Settings for each camera used
 ### First, if you use the zed2 camera
 > Since the zed2 camera provides various functions such as depth, tracking, object recognition, etc., the user has to set the required topic.
 > <br>
-> Details on the topic
-> <br>
-> https://www.stereolabs.com/docs/ros/zed-node/#zed-parameters
+> > Details on the topic:
+> > <br>
+> > https://www.stereolabs.com/docs/ros/zed-node/#zed-parameters
 > <br>
 > The topic code of the desired function must be written in the ros.yaml file.
 > <br>
