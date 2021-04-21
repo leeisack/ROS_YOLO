@@ -73,12 +73,17 @@ Settings for each camera used
 ============================
 #### You have to set it up for each camera you use. Currently, I am using a ZED2 camera, so I will first tell you how to set up a ZED camera, and then write the code for the USB_CAM that is commonly used.
 > > What is zed2 cmera?
+> > <br>
 > > https://www.stereolabs.com/docs/
-> ### First, if you use the zed2 camera
->> Since the zed2 camera provides various functions such as depth, tracking, object recognition, etc., the user has to set the required topic.
-> > Details on the topic
-> > https://www.stereolabs.com/docs/ros/zed-node/#zed-parameters
+### First, if you use the zed2 camera
+> Since the zed2 camera provides various functions such as depth, tracking, object recognition, etc., the user has to set the required topic.
+> <br>
+> Details on the topic
+> <br>
+> https://www.stereolabs.com/docs/ros/zed-node/#zed-parameters
+> <br>
 > The topic code of the desired function must be written in the ros.yaml file.
+> <br>
 >![스크린샷, 2021-04-21 11-21-07](https://user-images.githubusercontent.com/52061393/115490066-4d449100-a298-11eb-9279-dd1ea392856c.png)
 > ```
 > subscribers:
@@ -86,7 +91,7 @@ Settings for each camera used
 > topic: /zed/left/image_raw_color
 > queue_size: 1
 > ```
-> ### Second, the most commonly used USB_CAM case
+### Second, the most commonly used USB_CAM case
 > #### install
 > ```
 > sudo apt-get install ros-kinetic-usb-cam
