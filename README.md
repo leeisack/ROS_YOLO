@@ -89,7 +89,7 @@ wget http://pjreddie.com/media/files/yolov2-tiny-voc.weights
 ```
 * Yolov3
 ```
-wget http://pjreddie.com/media/files/yolov3-voc.weights
+wget http://pjreddie.com/media/files/yolov3-tiny.weights
 wget http://pjreddie.com/media/files/yolov3.weights
 ```
 #### setting
