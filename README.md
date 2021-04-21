@@ -11,7 +11,32 @@ What is ROS?
 > > If you want to install, go here and follow the instructions.
 > > http://wiki.ros.org/ROS/Installation
  
- 
+Zed_ros installation
+--------------------------
+detail information: https://www.stereolabs.com/docs/ros/
+#### installation
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/stereolabs/zed-ros-wrapper.git
+$ cd ../
+$ rosdep install --from-paths src --ignore-src -r -y
+$ catkin_make -DCMAKE_BUILD_TYPE=Release
+$ source ./devel/setup.bash
+```
+#### run
+ZED camera: 
+```
+$ roslaunch zed_wrapper zed.launch
+```
+ZED Mini camera:
+```
+$ roslaunch zed_wrapper zedm.launch
+```
+ZED 2 camera: 
+```
+$ roslaunch zed_wrapper zed2.launch
+```
+
 Yolo istallation
 ---------------------------------------------
 (On the teminal)
@@ -113,10 +138,10 @@ Error occurrence situation
 
 ## CASE1
 > ### When Darknet doesn't work
+> ![스크린샷, 2021-04-21 13-42-54](https://user-images.githubusercontent.com/52061393/115497947-918b5d80-a2a7-11eb-9097-26dc6d31615b.png)
 > #### build
 > ```
 > $ cd catkin_ws
-> $ catkin_make-DCMAKE_BUILD_TYPE=Release
 > $ source devel/setup.bash
 > ```
 > #### run
@@ -126,9 +151,9 @@ Error occurrence situation
 
 ## CASE2
 > ### When the Zed camera does not work
+> ![스크린샷, 2021-04-21 13-42-20](https://user-images.githubusercontent.com/52061393/115497923-89332280-a2a7-11eb-871e-d9ff224e14f0.png)
 > #### build
 > ```
-> $ catkin_make -DCMAKE_BUILD_TYPE=Release
 > $ source ./devel/setup.bash #current position : catkin_ws
 > ```
 > #### run
@@ -175,3 +200,32 @@ Error occurrence situation
 > <br>
 > ![스크린샷, 2021-04-21 11-31-45](https://user-images.githubusercontent.com/52061393/115488394-5c760f80-a295-11eb-88de-d7450c9c72e8.png)
 
+RVIZ
+===========
+> #### Additionally, using RVIZ can help you visually. RVIZ is a 3D visualization tool for ROS applications.
+> install
+> The installation command differs depending on your ROS (in my case it was the melodic version).
+> ```
+> $ sudo apt-get install ros-groovy-rviz
+> # or
+> $ sudo apt-get install ros-hydro-rviz
+> # or
+> $ sudo apt-get install ros-indigo-rviz
+> # or
+> $ sudo apt-get install ros-kinetic-rviz
+> # or
+> $ sudo apt-get install ros-melodic-rviz
+> # or
+> $ sudo apt-get install ros-noetic-rviz
+> ```
+> build
+> ```
+> $ source /opt/ros/melodic/setup.bash
+> $ roscore
+> ```
+> run
+> $ rosrun rviz rviz
+> ![스크린샷, 2021-04-21 13-45-02](https://user-images.githubusercontent.com/52061393/115498058-ca2b3700-a2a7-11eb-94fb-e785dda9f632.png)
+> If yolo_ros, zed camera is on, press ADD in RVIZ to see various functions.
+> ![스크린샷, 2021-04-21 13-46-55](https://user-images.githubusercontent.com/52061393/115500616-9d2d5300-a2ac-11eb-80a9-5cfd8878ffae.png)
+![스크린샷, 2021-04-21 14-11-49](https://user-images.githubusercontent.com/52061393/115500625-a1597080-a2ac-11eb-9aea-65258729c97e.png)
