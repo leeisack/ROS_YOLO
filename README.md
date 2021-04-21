@@ -14,10 +14,9 @@ What is ROS?
 Zed_ros installation
 --------------------------
 > What is Zed?
-> https://www.stereolabs.com/docs/installation/
+> https://www.stereolabs.com/zed-2/
 <br>
-detail information for installation: https://www.stereolabs.com/docs/ros/
-<br>
+> detail information for installation: https://www.stereolabs.com/docs/ros/
 #### installation
 ```
 $ cd ~/catkin_ws/src
