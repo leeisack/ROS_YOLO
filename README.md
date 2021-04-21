@@ -76,15 +76,15 @@ Error occurrence situation
 ## CASE1
 > ### When Darknet doesn't work
 > #### build
-```
-$ cd catkin_ws
-$ catkin_make-DCMAKE_BUILD_TYPE=Release
-$ source devel/setup.bash
-```
+> ```
+> $ cd catkin_ws
+> $ catkin_make-DCMAKE_BUILD_TYPE=Release
+> $ source devel/setup.bash
+> ```
 > #### run
-```
-$ roslaunch darknet_ros darknet_ros.launch
-```
+> ```
+> $ roslaunch darknet_ros darknet_ros.launch
+> ```
 
 ## CASE2
 > ### When the Zed camera does not work
@@ -93,3 +93,47 @@ $ roslaunch darknet_ros darknet_ros.launch
 > $ catkin_make -DCMAKE_BUILD_TYPE=Release
 > $ source ./devel/setup.bash #current position : catkin_ws
 > ```
+> #### run
+> ```
+> $ roslaunch zed_wrapper zed2.launch 
+> ```
+
+## CASE3
+> ### Darkent_ROS is working, but When the desired camera (now using zed2) is not recognized and only wait for image is displayed on the terminal.
+> In this case, you need to find the ros.yaml file and yolov3.yaml file and make changes.
+> The ros.yaml,yolov3.yaml files are here.
+> ```
+> $ cd catkin_ws/src/darknet_ros/darknet_ros/config
+> ```
+> ### Change the code in ros.yaml like this
+> ```
+> subscribers:
+> camera_reading:
+> topic: /zed/left/image_raw_color
+> queue_size: 1
+> actions:
+> camera_reading:
+> name: /darknet_ros/check_for_objects
+> publishers:
+> object_detector:
+> topic: /darknet_ros/found_object
+> queue_size: 1
+> latch: false
+> bounding_boxes:
+> topic: /darknet_ros/bounding_boxes
+> queue_size: 1
+> latch: false
+> detection_image:
+> topic: /darknet_ros/detection_image
+> queue_size: 1
+> latch: true
+> image_view:
+> enable_opencv: true
+> wait_key_delay: 1
+> enable_console_output: true
+> ```
+> ### Change the code in yolov3.yaml like this(You can see the screenshot at the bottom)
+> ```
+> Add the dragged part.
+> ![스크린샷, 2021-04-21 11-31-45](https://user-images.githubusercontent.com/52061393/115488394-5c760f80-a295-11eb-88de-d7450c9c72e8.png)
+
